@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Nacionalidade: <input type="text" name="br" id="br"> 
+    <input type="button" value="verificar" onclick="verificar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        var br = window.document.getElementById('br')
+
+  function verificar() {
+  var br = window.document.querySelector('input#br') 
+  var res = window.document.querySelector('div#res') 
+  var país = String(br.value)
+  if (país == 'Brasil') {
+    res.innerHTML = `Vivendo em ${país}, você é brasileiro`
+  } else {
+   res.innerHTML = `Você é estrangeiro`
+  }
+  }
+    </script>
+</body>
+</html>
