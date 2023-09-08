@@ -24,3 +24,9 @@ footer {
   text-align: center;
   font-style: italic;
 }
+
+select {
+  width: 150px;
+  height: 150px;
+}
+
