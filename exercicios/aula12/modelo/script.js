@@ -2,7 +2,7 @@ let idade = document.querySelector('input#idade')
 let res = document.querySelector('div#res')
 
 
-res.innerHTML = `Você tem ${ida} anos`
+
 
 
 function verificar() {
