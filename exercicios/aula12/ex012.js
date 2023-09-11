@@ -1,14 +1,15 @@
 var agora = new Date()
-var hora = agora.get()
+var hora = agora.getHours()
 console.log(`São ${hora} horas`)
-if (hora < 12) {
-    console.log(`Bom dia!`)
-} else if (hora <= 18) {
+if (hora >= 0 && hora < 6) {
+    console.log(`Bom madrugada!`)
+} else if (hora < 12) {
+    console.log(`Boa dia!`)
+} else if (hora <= 18){
     console.log(`Boa tarde!`)
 } else {
-    console.log(`Boa Noite!`)
-} 
-
+    console.log('Boa noite!')
+}
 /*
 else if == else {
     if{

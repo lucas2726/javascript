@@ -1,6 +1,6 @@
 function verificar() {
     var data = new Date()
-    var ano = data.getFullYear()
+    var ano = data.getFullYear() //Para colocar o ano inteiro
     var fano = document.getElementById('txtano')
     var res = document.querySelector('div#res')
     if (fano.value.length == 0 || Number(fano.value) > ano) {

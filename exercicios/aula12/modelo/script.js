@@ -1,11 +1,7 @@
-let idade = document.querySelector('input#idade')
-let res = document.querySelector('div#res')
-
-
-
-
 
 function verificar() {
+    let idade = document.querySelector('input#idade')
+    let res = document.querySelector('div#res')
     ida = Number(idade.value)
 if (ida < 16) {
     res.innerHTML = 'Não vota'
@@ -15,5 +11,6 @@ if (ida < 16) {
     res.innerHTML = 'Voto obrigatório'
 }
 }
+
 
 
