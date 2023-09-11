@@ -7,3 +7,12 @@ if (idade < 16) {
 } else {
     console.log(`Voto obrigatório`)
 } 
+
+/*
+else if == else {
+    if{
+
+    }
+}
+else if economiza linhas
+*/

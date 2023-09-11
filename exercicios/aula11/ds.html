@@ -18,7 +18,7 @@
   function verificar() {
   var br = window.document.querySelector('input#br') 
   var res = window.document.querySelector('div#res') 
-  var país = String(br.value)
+  var país = br.value
   if (país == 'Brasil') {
     res.innerHTML = `Vivendo em ${país}, você é brasileiro`
   } else {

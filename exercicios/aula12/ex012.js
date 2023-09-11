@@ -8,3 +8,12 @@ if (hora < 12) {
 } else {
     console.log(`Boa Noite!`)
 } 
+
+/*
+else if == else {
+    if{
+
+    }
+}
+else if economiza linhas
+*/
