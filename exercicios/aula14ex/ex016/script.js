@@ -21,12 +21,12 @@ function contar() {
           }
           if (i < f) {
                // Contagem crescente
-          for(var c = i ; c <= f ; c += p) {
+          for(var c = i /*da onde vai começar*/ ; c <= f /*Onde vai terminar */ ; c += p /*Como será adicionado esse valor ou subtraido*/) {
                res.innerHTML += ` ${c} \u{1F449}`
              }
           } else {
                // Contagem regressiva
-          for(var c = i ; c >= f ; c -= p) {
+          for(var c = i /*da onde vai começar*/ ; c >= f /*Onde vai terminar */ ; c -= p /*Como será adicionado esse valor ou subtraido*/) {
                res.innerHTML += `${c} \u{1F449}`
           }
         }
