@@ -1,4 +1,4 @@
-function parimp(n) {
+function parimpar(n) {
     if (n%2 == 0) {
     return 'Par!'
     } else {
@@ -6,4 +6,4 @@ function parimp(n) {
     }
 }
 
-console.log(parimp(4))
+console.log(parimpar(4))
