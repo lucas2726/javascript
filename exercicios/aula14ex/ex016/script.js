@@ -22,12 +22,12 @@ function contar() {
           if (i < f) {
                // Contagem crescente
           for(var c = i /*da onde vai começar*/ ; c <= f /*Onde vai terminar */ ; c += p /*Como será adicionado esse valor ou subtraido*/) {
-               res.innerHTML += ` ${c} \u{1F449}`
+               res.innerHTML += ` ${c} \u{1F449}` // += Para fazer concatenção
              }
           } else {
-               // Contagem regressiva
+               // Contagem decrescente
           for(var c = i /*da onde vai começar*/ ; c >= f /*Onde vai terminar */ ; c -= p /*Como será adicionado esse valor ou subtraido*/) {
-               res.innerHTML += `${c} \u{1F449}`
+               res.innerHTML += `${c} \u{1F449}` // += Para fazer concatenção
           }
         }
         res.innerHTML += `\u{1F3C1}`
