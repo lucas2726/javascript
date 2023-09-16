@@ -16,5 +16,7 @@ if (num.value.length == 0) {
 }
 
 function finalizar() {
-    if(valores.length == 0)
+    if(valores.length == 0) {
+        
+    }
 }
