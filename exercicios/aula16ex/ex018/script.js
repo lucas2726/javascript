@@ -29,8 +29,8 @@ function adicionar() {
     - A div `res` é limpa.
     - Caso contrário, exibe um alerta informando que o valor é inválido ou já está na lista.*/
     if (isNumero(num.value) && !inLista(num.value, valores)) {
-        valores.push(Number(num.value))
-        let item = document.createElement('option')
+        valores.push(Number(num.value)) //Para colocar num dentro de valores
+        let item = document.createElement('option') //Para adicionar texto dentro do option
         item.text = `Valor ${num.value} adicionado`
         lista.appendChild(item)
         res.innerHTML = ''
@@ -69,3 +69,5 @@ function finalizar() {
         res.innerHTML += `<p>A média dos valores digitados é ${media}</p>`
     }
 }
+
+
