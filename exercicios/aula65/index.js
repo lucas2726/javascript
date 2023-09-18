@@ -12,4 +12,8 @@ const timer = setInterval(function() {
 
 setTimeout(function() {
     clearInterval(timer)
-}, 10000)
+}, 3000)
+
+setTimeout(function(){
+    console.log('Olá mundo!')
+}, 5000)
