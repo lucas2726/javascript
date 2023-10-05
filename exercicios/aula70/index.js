@@ -1,15 +1,11 @@
-//Armazenando uma função em uma variavel
-const imprimirSoma = function (a,b) {
-    console.log(a + b)
-}
+const filhas = ['Ualeskah', 'Cibalena']
+const filhos = ['Uoxiton', 'Uesclei']
+const todos = filhas.concat(filhos)
+console.log(todos, filhas, filhos)
 
-//Armazenando uma função arrow em uma variavel
-const soma = (a, b) => {
-    return a + b
-}
+console.log([].concat([1, 2], [3, 4], 5, [[6, 7]]))
 
-console.log(soma(2, 3))
 
-//retornoo implicito
-const subtracao = (a, b) => a - b
-console.log(subtracao(2, 3))
+
+
+
