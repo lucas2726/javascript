@@ -1,7 +1,9 @@
+const minhaFuncao = () => {
+    console.log('Olá, mundo!');
+  };
+  
+  module.exports = minhaFuncao;
 
-// Em outro arquivo
-import meuValor from './modulo';
-console.log(meuValor); // Isso imprimirá 42 no console
 
 
 
