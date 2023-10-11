@@ -1,19 +1,19 @@
 const fs = require('fs');
 
-// Dados que você quer escrever no arquivo
-const dadosParaEscrever = 'Olá, mundo!';
-
-// Caminho para o arquivo onde você quer escrever os dados
+// Caminho para o arquivo que você quer ler
 const caminhoArquivo = 'caminho/do/seu/arquivo.txt';
 
-// Escreve os dados no arquivo de forma assíncrona
-fs.writeFile(caminhoArquivo, dadosParaEscrever, (err) => {
+// Lê o arquivo de forma assíncrona (não bloqueante)
+fs.readFile(caminhoArquivo, 'utf8', (err, dados) => {
   if (err) {
-    console.error('Erro ao escrever no arquivo:', err);
+    console.error('Erro ao ler o arquivo:', err);
     return;
   }
-  console.log('Dados foram escritos no arquivo com sucesso.');
+  console.log('Conteúdo do arquivo:', dados);
 });
+
+console.log('Lendo o arquivo...'); // Esta linha será impressa antes do conteúdo do arquivo devido à natureza assíncrona da leitura de arquivos.
+
 
 
 
