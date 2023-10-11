@@ -1,7 +1,6 @@
-// No arquivo principal.js
-const minhaFuncao = require('./meuModulo');
 
-minhaFuncao('Olá', 'Mundo');
+
+
 
 
 
