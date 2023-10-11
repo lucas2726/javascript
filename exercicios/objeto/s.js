@@ -1,8 +1,15 @@
-const minhaFuncao = () => {
-    console.log('Olá, mundo!');
-  };
-  
-  module.exports = minhaFuncao;
+// No arquivo principal.js
+const minhaFuncao = require('./meuModulo');
+
+minhaFuncao('Olá', 'Mundo');
+
+
+
+
+
+   
+
+
 
 
 
