@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "nodash": "^0.12.0"
+    "nodash": "^0.12.0",
+    "node-schedule": "^2.1.1"
   }
 }
