@@ -1,7 +1,15 @@
 const data = new Date();
-// Obtém a hora atual formatada de acordo com as configurações regionais do navegador
-const horaFormatada = data.toLocaleTimeString();
+const opcoes = {
+  hour12: true, // Use formato de 12 horas
+  hour: 'numeric',
+  minute: 'numeric',
+  second: 'numeric',
+  timeZoneName: 'short',
+  weekday: 'long',
+}
+const horaFormatada = data.toLocaleTimeString('en-US', opcoes);
 console.log(horaFormatada);
+
 
 
 
