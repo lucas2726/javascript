@@ -1,0 +1,10 @@
+const {alfabeto, html, texto, arquivos} = require('./base')
+
+console.log(alfabeto)
+console.log(alfabeto.match(/[abc123]/g))
+console.log(alfabeto.match(/[abc123]+/g))
+console.log(alfabeto.match(/[^abc123]/g))
+console.log(alfabeto.match(/[^abc123]+/g))
+console.log(alfabeto.match(/[0-9]+/g))
+console.log(alfabeto.match(/[a-z]+/g))
+console.log(alfabeto.match(/[A-Z]+/g))

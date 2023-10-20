@@ -1,8 +1,15 @@
-var texto = "foo123";
-var padrao = /(foo|bar)(\d+)/;
-var resultado = texto.match(padrao);
-console.log(resultado[1]); // Saída: "foo" (primeiro grupo de captura)
-console.log(resultado[2]); // Saída: "123" (segundo grupo de captura)
+var texto = "aabab";
+var padraoGanancioso = /a.+b/;
+var padraoNaoGanancioso = /a.+?b/;
+console.log(texto.match(padraoGanancioso)); // Saída: ["aabab"] (ganancioso: corresponde ao máximo possível)
+console.log(texto.match(padraoNaoGanancioso)); // Saída: ["aab"] (não ganancioso: corresponde ao mínimo possível)
+
+
+
+
+
+
+
 
 
 
