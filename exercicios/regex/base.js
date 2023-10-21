@@ -26,10 +26,20 @@ const html = '<p>Olá mundo</p> <p>Olá de novo</p>'
 
 const alfabeto = 'ABCDEFGHIJKLMNOPQRSTUVXWYZ abcdefghijklmnopqrstuvwxyz 0123456789'
 
+const lookahead = `inactive 
+active 
+active 
+inactive
+ONLINE
+ONLINE
+OFFLINE
+`
+
 module.exports = {
     texto,
     arquivo,
     html,
     alfabeto,
-    CPFs
+    CPFs,
+    lookahead
 }
