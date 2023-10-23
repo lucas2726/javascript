@@ -1,17 +1,8 @@
-class Carro {
-  constructor(marca, modelo) {
-    this.marca = marca;
-    this.modelo = modelo;
-  }
+const meuCachorro = new Cachorro('Rex', 'Labrador');
+meuCachorro.fazerBarulho(); // Saída: Latindo
+meuCachorro.mostrarInfo(); // Saída: Nome: Rex, Raça: Labrador
 
-  exibirInformacoes() {
-    console.log(`Este é um ${this.marca} ${this.modelo}`);
-  }
-}
 
-// Criando um objeto usando a classe Carro
-const meuCarro = new Carro('Toyota', 'Corolla');
-meuCarro.exibirInformacoes(); // Saída: Este é um Toyota Corolla
 
 
 
