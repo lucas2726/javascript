@@ -1,6 +1,9 @@
-const meuCachorro = new Cachorro('Rex', 'Labrador');
-meuCachorro.fazerBarulho(); // Saída: Latindo
-meuCachorro.mostrarInfo(); // Saída: Nome: Rex, Raça: Labrador
+const arr = [1, 2, 3];
+for (const element of arr) {
+  console.log(element); // Imprime 1, 2, 3
+}
+
+
 
 
 
