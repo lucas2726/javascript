@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form id="meuFormulario">
+  <label for="nome">Nome:</label>
+  <input type="text" id="nome" name="nome">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+  
+  <button type="button" onclick="enviarFormulario()">Enviar</button>
+</form>
+
+<script>
+function enviarFormulario() {
+  const formulario = document.getElementById('meuFormulario');
+  const dadosDoFormulario = new FormData(formulario);
+
+  // Agora você pode usar dadosDoFormulario para enviar os dados via fetch ou outra técnica de requisição AJAX.
+  // Por exemplo:
+  fetch('https://api.exemplo.com/salvar', {
+    method: 'POST',
+    body: dadosDoFormulario
+  })
+  .then(response => response.json())
+  .then(resposta => {
+    console.log(resposta); // Manipula a resposta do servidor
+  })
+  .catch(error => {
+    console.error('Erro:', error); // Trata erros de requisição
+  });
+}
+</script>
+</body>
+</html>
