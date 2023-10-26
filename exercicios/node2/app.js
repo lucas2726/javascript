@@ -1,3 +1,7 @@
-const calculadora = require("./calculadora.js")
+const http = require("http")
 
-console.log(calculadora.nome)
+http.createServer(function(requisicao, resposta){
+    resposta.end("<h1>Bem vindo ao meu site!</h1>")
+}).listen(8181)
+
+
